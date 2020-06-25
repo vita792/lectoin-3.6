@@ -8,26 +8,11 @@ public class Main {
         System.out.println("Enter some number: ");
         Scanner numb = new Scanner(System.in);
         int count = numb.nextInt();
-        if (count == 1) {
-            System.out.println("#");
-        } else if (count == 2) {
-            System.out.println("#\n##");
-        } else if (count == 3) {
-            System.out.println("#\n##\n###");
-        } else if (count == 4) {
-            System.out.println("#\n##\n###\n####");
-        } else if (count == 5) {
-            System.out.println("#\n##\n###\n####\n#####\n#####");
-        } else if (count == 6) {
-            System.out.println("#\n##\n###\n####\n#####\n######\n######");
-        } else if (count == 7) {
-            System.out.println("#\n##\n###\n####\n#####\n######\n#######");
-        } else if (count == 8) {
-            System.out.println("#\n##\n###\n####\n#####\n######\n#######\n########");
-        } else if (count == 9) {
-            System.out.println("#\n##\n###\n####\n#####\n######\n#######\n########\n##########");
-        } else {
-            System.out.println("Please, enter number from 1 to 9!");
-        }
-    }
+        for (int i = 0; i < count; i++) {
+           for (int j = 0; j < i; j++) {
+            System.out.println("*");
+            }
+            System.out.println("*");
+       }
+   }
 }
